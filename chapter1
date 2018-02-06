@@ -1,0 +1,11 @@
+-- exercises 1.11
+
+-- recursive
+
+(define (eff n)
+  (if (< n 3)
+      n
+      (+ (+ (eff (- n 1)) (* 2 (eff (- n 2)))) (* 3 (eff (- n 3))))
+      )
+  )
+        
